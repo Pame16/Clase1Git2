@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hocicos Felices</title>
+</head>
+
+<body>
+    <header><img src="./Assets Formulario/Mascotas.jpg" alt="Mascotas">
+        <h1>"HOCICOS FELICES"</h1>
+        <h2>El Mejor Hotel Para Tu Mascota!</h2>
+    </header>
+    <main>
+        <h3>NUEVA RESERVA: Completa el siguiente formulario para crear un usuario y reservar su estadía.</h3>
+
+        <form action="POST">
+            <label for="Nombre del Dueño:"> Nombre del Dueño:
+                <input type="text" placeholder="Tu nombre" id="Nombre del Dueño"></label>
+            <label for="Apellido del Dueño:"> Apellido del Dueño:
+                <input type="text" placeholder="Tu apellido" id="Apellido del Dueño"></label>
+            <br>
+            <label for="telefono de contacto:"> Teléfono de contacto:
+                    <input type="text" placeholder="Teléfono" id="telefono de contacto"></label>
+            <br>
+            <label for="Nombre de Usuario:"> Nombre de Usuario:
+                <input type="text" placeholder="Usuario" id="Nombre de Usuario:"></label>
+            <label for="Contraseña:"> Contraseña:
+                <input type="password" placeholder="Cree una clave segura" maxlength="24" minlength="6"></label>
+            <p>¿Ya tienes usuario y contraseña?</P> <a href="https://www.google.com/">Haz Click Aquí!</a>
+            <br>
+            <h4>Sobre nuestro futuro huesped!</h4>
+            <h5>Tipo de Mascota</h5>
+            <select name="Tipo de Mascotas" id="Tipo de Mascotas">
+                <option value="Perro"> Perro</option>
+                <option value="Gato"> Gato</option>
+                <option value="Conejo"> Conejo</option>
+                <option value="Otro"> Otro</option>
+            </select>
+            <br>
+            <label for="Nombre:"> Nombre:
+                <input type="text" placeholder="Nombre" id="Nombre"></label>
+            <br>
+            <label for="Raza:"> Raza:
+                <input type="text" placeholder="Raza" id="Raza"></label>
+            <br>
+            <label for="Edad:"> Edad Aproximada:
+                <input type="text" placeholder="Edad" id="Edad"></label>
+            <br>
+            <label>
+                <h5>Peso Aproximado</h5>
+                <select name="peso" id="peso">
+                    <option value="hasta 15 kg"> Hasta 15 Kg</option>
+                    <option value="de 16 a 30 kg"> De 16 a 30 Kg</option>
+                    <option value="de 31 a 45 kg"> De 31 a 45 Kg</option>
+                    <option value="mas de 45 kg"> Más de 45 Kg</option>
+                </select>
+            </label>
+            <br>
+            <label>
+                <h5>¿Qué fecha querés que tu mascota ingrese al hotel?</h5>
+                <input type="date" name="fecha" id="fecha">
+            </label>
+            <br>
+            <label> <h5>¿Qué servicios quisiera inclur en la estadía?</h5>
+                <br>
+                <input type="checkbox" value="golosinas" checked> Golosinas</label>
+            <label>
+                <input type="checkbox" value="peuquería"> Peluquería</label>
+            <label>
+                <input type="checkbox" value="spa"> Spa</label>
+            <label>
+                <input type="checkbox" value="veterinario"> Veterinario</label>
+            <br>
+            <label>
+                <h5>¿Es la primera vez que tu mascota se hospeda con nosotros?</h5>
+                <input type="radio" name="respuesta" value="SI"> SI
+                <input type="radio" name="respuesta" value="NO"> NO
+                <br>
+                <p>Si ya fueron nuestros cientes, dejanos un comentario sobre tu experiencia.</p>
+                <textarea name="comentario" id="comentario" cols="30" rows="10"
+                    placeholder="¿Qué opinión tenés de nosotros?"></textarea>
+            </label>
+            <label>
+                <h5>Compartinos una foto o video de tu mascota!</h5>
+                <input type="file" name="Mascota" id="Foto" accept="image/*,video/*">
+            <br>
+            <h3>Envíanos tus respuestas!</h3>
+            </label>
+                <input type="submit" name="submit" value="Enviar!"/>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; Pame López LLance: aprendiendo formularios 2021</p>
+    </footer>
+</body>
+
+</html>
